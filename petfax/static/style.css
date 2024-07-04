@@ -1,0 +1,60 @@
+
+body {
+    margin: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  #pet-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  #pet-cards > * {
+    width: 500px;
+  }
+  
+  #pet-cards img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .card {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .btn {
+    display: inline-block;
+    border-radius: 0.5rem;
+    background-color: gray;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group > label {
+    display: block;
+  }
+  
+  .form-group > input {
+    display: block;
+    width: 100%;
+  }

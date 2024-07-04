@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetFax</title>
+  <link rel="stylesheet" href={{ url_for('static', filename='styles.css') }}>
+</head>
+<body>
+  <h1>PetFax</h1>
+  <ul>
+    {% for fact in data: %}
+      <li>{{ fact.fact }} (Submitted by {{ fact.submitter }})</li>
+    {% endfor %}
+  </ul>
+  <a href="/facts/new" class="btn">Submit a New Fact</a>
+</body>
+</html>

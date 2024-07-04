@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetFax</title>
+  <link rel="stylesheet" href={{ url_for('static', filename='styles.css') }}>
+</head>
+
+  <body>
+      <h1>Welcome to PetFax</h1>
+      <h2>Available Pets:</h2>
+
+      <div id="pet-cards">
+
+        {% for pet in data: %}
+        <a href="/pets/{{ pet["pet_id"] }}">
+          <div>
+            <h3>{{ pet["pet_name"] }}</h3>
+            <img src="{{ pet["pet_photo"] }}">
+            <p>{{ pet["pet_fact"] }}</p>
+          </div>
+        </a>
+        {% endfor %}
+
+      </div>
+
+  </body>
+
+</html>
